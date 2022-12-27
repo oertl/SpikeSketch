@@ -1,0 +1,3 @@
+cmake .
+cmake --build . --config Release
+mv cspike_th_mem ../

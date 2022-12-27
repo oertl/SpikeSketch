@@ -1,0 +1,13 @@
+cmake .
+cmake --build . --config Release
+
+./cspike_std_mem 6 8 &
+./cspike_std_mem 9 11 &
+./cspike_std_mem 12 14 &
+./cspike_std_mem 15 16 &
+
+
+用下面命令杀死进程：
+ps -ax |egrep cspikeErrVSMem.out | egrep -o "^[ ]*[0-9]+"| xargs -I {} kill {}
+
+

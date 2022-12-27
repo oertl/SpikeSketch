@@ -1,0 +1,3 @@
+cmake .
+cmake --build . --config Release
+mv Apache_CPC ../Apache_CPC_stdError_mem

@@ -1,0 +1,11 @@
+
+cmake .
+cmake --build . --config Release
+mv ACPC_stdError_mem ..
+
+./ACPC_stdError_mem 6 9 &
+./ACPC_stdError_mem 10 13 &
+./ACPC_stdError_mem 14 18 &
+
+
+ps -ax |egrep ACPC_stdError_mem | egrep -o "^[ ]*[0-9]+"| xargs -I {} kill {}

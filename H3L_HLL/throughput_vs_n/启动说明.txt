@@ -1,0 +1,3 @@
+cmake .
+cmake --build . --config Release
+mv H3L_HLL_th_n ../H3L_HLL_th_n
