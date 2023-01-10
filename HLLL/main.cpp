@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    uint64_t nf = 1 << 10;
+    uint64_t nf = 1 << 10;//Actual Cardinality
     int regNum = 109;
 
     srand(time(NULL));
@@ -28,7 +28,7 @@ int main() {
 
     ofstream logFile;
     logFile.open("result.txt", ios::out);
-    logFile << "Input:\n\t" << "Actual Cardinality: " << nf << "\n\tNumber of Register: " << regNum << endl;
+    logFile << "Input:\n\t" << "Actual Cardinality: " << nf << "\n\tNumber of Registers: " << regNum << endl;
     logFile << "######################################" << endl;
     logFile << "Output:\n\t" << "Estimate Cardinality: " << result << "\n\tMemory Usage: " << Mem;
     logFile.close();

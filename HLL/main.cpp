@@ -9,7 +9,7 @@ using namespace std;
 
 int main() {
     int registerNum = 108;
-    int nf = 1 << 10;
+    int nf = 1 << 10;//Actual Cardinality
 
     srand(time(NULL));
     uint64_t key;
@@ -28,9 +28,9 @@ int main() {
     ofstream logFile;
     sprintf(traceFilePath, "result.txt");
     logFile.open(traceFilePath, ios::out);
-    logFile <<"Input:\n\tReal Cardinality: "<<nf<< "\n\tNumber of Register: " << registerNum << endl;//实验次数
+    logFile <<"Input:\n\tReal Cardinality: "<<nf<< "\n\tNumber of Registers: " << registerNum << endl;
     logFile << "######################################" << endl;
-    logFile <<"Output:\n\t"<<"Estimate Cardinality: "<<result<< "\n\tMemory Usage: " << memory;//实际基数
+    logFile <<"Output:\n\t"<<"Estimate Cardinality: "<<result<< "\n\tMemory Usage: " << memory;
     logFile.close();
 
     return 0;

@@ -5,13 +5,12 @@
 using namespace std;
 
 int main() {
-    uint64_t nf = 1 << 25;
+    uint64_t nf = 1 << 25;//Actual Cardinality
     int regNum = 49;
 
     srand(time(NULL));
     uint64_t key;
     double value = 0;
-
     time_t seed = rand() + 1316561;
     mt19937 rng(seed);
     uniform_int_distribution<uint64_t> dist(0, UINT64_MAX);
@@ -31,7 +30,7 @@ int main() {
 
     ofstream logFile;
     logFile.open("result.txt", ios::out);
-    logFile << "Input:\n\t" << "Real Cardinality: " << nf << "\n\tNumber of Register: " << regNum << endl;
+    logFile << "Input:\n\t" << "Real Cardinality: " << nf << "\n\tNumber of Registers: " << regNum << endl;
     logFile << "######################################" << endl;
     logFile << "Output:\n\t" << "Estimate Cardinality: " << value << "\n\tMemory Usage: " << Mem;
     logFile.close();
