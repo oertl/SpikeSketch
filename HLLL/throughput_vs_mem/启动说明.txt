@@ -1,9 +1,0 @@
-cmake .
-cmake --build . --config Release
-mv HLLL ../HLLL_stdError_mem
-
-./HLLL_stdError_mem 6 9 &
-./HLLL_stdError_mem 10 13 &
-./HLLL_stdError_mem 14 18 &
-
-ps -ax |egrep HLLL_stdError_mem | egrep -o "^[ ]*[0-9]+"| xargs -I {} kill {}

@@ -1,3 +1,0 @@
-cmake .
-cmake --build . --config Release
-mv HLLL ../HLLL_stdErr_n
