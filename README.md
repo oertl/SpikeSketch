@@ -5,7 +5,7 @@ Cardinality estimation is a fundamental problem with diverse practical applicati
 ## About this repo
 In our paper, we evaluated the performance of our proposed SpikeSketch and compared it with state-of-the-art algorithms, including HyperLogLog (HLL) , ACPC, and HyperLogLogLog (HLLL). The implementation code of these four algorithms are given in this repository.
 ## How to run these codes?
-We strongly recommend that you compile these code using CMake. We have given the corresponding CMakeLists.txt in each directory.The compiling command is as follows.
+We strongly recommend that you compile these code using CMake. We have given the corresponding CMakeLists.txt in each directory. The compiling command is as follows.
 ```shell
 cmake .
 cmake --build . --config Release
